@@ -1,27 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background_register">
+
+    <EditText
+        android:id="@+id/edittext_register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="نام"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/edittext_register_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:layout_below="@id/edittext_register_name"
+        android:layout_margin="10dp"
+        android:hint="ایمیل"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/edittext_register_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:layout_below="@id/edittext_register_email"
+        android:layout_margin="10dp"
+        android:hint="رمز عبور"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edittext_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_register_password"
+        android:layout_margin="10dp"
+        android:hint="شماره تماس"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:inputType="phone"/>
 
     <Button
         android:id="@+id/button_register_submit"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_marginTop="16dp" />
-</LinearLayout>
+        android:layout_below="@id/edittext_register_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ثبت نام"
+        android:drawableLeft="@drawable/ic_register"
+        android:drawablePadding="10dp"/>
+</RelativeLayout>

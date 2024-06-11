@@ -27,13 +27,13 @@ public class LoginActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
 
                 if (email.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Please enter both email and password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "لطفاً ایمیل و رمز عبور را وارد کنید", Toast.LENGTH_SHORT).show();
                 } else {
                     // Validate user login (this is just a mockup)
                     if (email.equals("user@gymclub.com") && password.equals("password")) {
                         startActivity(new Intent(LoginActivity.this, MenuActivity.class));
                     } else {
-                        Toast.makeText(LoginActivity.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "ایمیل یا رمز عبور اشتباه است", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

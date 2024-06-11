@@ -1,27 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_login">
 
     <EditText
         android:id="@+id/edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:layout_margin="10dp"
+        android:hint="ایمیل"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/edittext_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:layout_below="@id/edittext_email"
+        android:layout_margin="10dp"
+        android:hint="رمز عبور"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/button_login_submit"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_marginTop="16dp" />
-</LinearLayout>
+        android:layout_below="@id/edittext_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ورود"
+        android:drawableLeft="@drawable/ic_login"
+        android:drawablePadding="10dp"/>
+</RelativeLayout>

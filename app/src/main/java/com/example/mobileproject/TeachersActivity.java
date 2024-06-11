@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TeachersActivity extends AppCompatActivity {
 
-    private String[] teachers = {"John Doe", "Jane Smith", "Jim Brown"};
+    private String[] teachers = {"جان دو", "جین اسمیت", "جیم براون"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

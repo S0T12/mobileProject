@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ClassesActivity extends AppCompatActivity {
 
-    private String[] classes = {"Volleyball", "Football", "Yoga"};
+    private String[] classes = {"والیبال", "فوتبال", "یوگا"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
